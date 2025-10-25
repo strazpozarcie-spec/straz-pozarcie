@@ -1,0 +1,70 @@
+# ==============================
+# STRAŻ POŻARCIE - KONFIGURACJA .HTACCESS
+# ==============================
+
+# 🔒 Wymuszenie HTTPS (jeśli ktoś wejdzie przez http://)
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ==============================
+# 🔐 NAGŁÓWKI BEZPIECZEŃSTWA
+# ==============================
+
+# Wymuszony HTTPS w przeglądarce
+Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+# Blokada wczytywania strony w ramkach (Clickjacking)
+Header always append X-Frame-Options SAMEORIGIN
+
+# Blokada domyślnego zgadywania typów MIME
+Header set X-Content-Type-Options nosniff
+
+# Polityka odwołań (Referrer Policy)
+Header set Referrer-Policy strict-origin-when-cross-origin
+
+# Polityka prywatności (blokada FLoC)
+Header set Permissions-Policy "interest-cohort=()"
+
+# Polityka Cross-Origin (COOP + COEP)
+Header set Cross-Origin-Opener-Policy same-origin
+Header set Cross-Origin-Embedder-Policy require-corp
+
+# Polityka bezpieczeństwa treści (CSP)
+Header set Content-Security-Policy "default-src 'self' https: data: blob:; img-src 'self' https: data: blob:; style-src 'self' 'unsafe-inline' https:; script-src 'self' https: 'unsafe-inline'; frame-src https:; connect-src 'self' https:;"
+
+# ==============================
+# ⚡️ CACHE DLA STATYCZNYCH PLIKÓW
+# ==============================
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 1 hour"
+  ExpiresByType text/css "access plus 30 days"
+  ExpiresByType application/javascript "access plus 30 days"
+  ExpiresByType image/webp "access plus 30 days"
+  ExpiresByType image/jpeg "access plus 30 days"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/x-icon "access plus 30 days"
+  ExpiresDefault "access plus 7 days"
+</IfModule>
+
+# ==============================
+# 🌐 KODOWANIE I DOMYŚLNA STRONA
+# ==============================
+
+AddDefaultCharset utf-8
+DirectoryIndex index.html index.htm
+
+# ==============================
+# 🧹 BLOKOWANIE NIECHCIANYCH ŻĄDAŃ
+# ==============================
+
+# Brak listowania plików w katalogach
+Options -Indexes
+
+# Ochrona pliku .htaccess
+<Files .htaccess>
+  Order Allow,Deny
+  Deny from all
+</Files>
