@@ -1,488 +1,283 @@
 <!DOCTYPE html>
 <html lang="pl">
- <head>
+<head>
   <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <title>
-   Stra&zdot; Po&zdot;arcie - Foodtruck
-  </title>
-  <meta content="foodtruck, burgery, Z&aogon;bki, Warszawa, jedzenie uliczne, Stra&zdot; Po&zdot;arcie, burgery wo&lstrok;owe, frytki, sosy, street food" name="keywords"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Straż Pożarcie - Foodtruck</title>
+
+  <meta name="keywords" content="foodtruck, burgery, Ząbki, Warszawa, jedzenie uliczne, Straż Pożarcie, burgery wołowe, frytki, sosy, street food"/>
   <!-- SEO META -->
-  <meta content="Stra&zdot; Po&zdot;arcie 🔥 Burgery, kanapki, frytki i autorskie sosy. Znajd&zacute; nas w Z&aogon;bkach pod Warszaw&aogon; i spr&oacute;buj kanapek, kt&oacute;re ugasz&aogon; tw&oacute;j g&lstrok;&oacute;d!" name="description"/>
-  <meta content="Stra&zdot; Po&zdot;arcie" name="author"/>
-  <meta content="index, follow" name="robots"/>
-  <!-- Open Graph META (Facebook, Instagram, Messenger) -->
-  <meta content="Stra&zdot; Po&zdot;arcie - Foodtruck Z&aogon;bki" property="og:title"/>
-  <meta content="Burgery, kanapki, frytki i sosy! Stra&zdot; Po&zdot;arcie - foodtruck w Z&aogon;bkach pod Warszaw&aogon;." property="og:description"/>
-  <meta content="https://twojadomena.pl/img/Straz_logo_WHITE.webp" property="og:image"/>
-  <meta content="website" property="og:type"/>
-  <meta content="https://twojadomena.pl" property="og:url"/>
+  <meta name="description" content="Straż Pożarcie 🔥 Burgery, kanapki, frytki i autorskie sosy. Znajdź nas w Ząbkach pod Warszawą i spróbuj kanapek, które ugaszą twój głód!"/>
+  <meta name="author" content="Straż Pożarcie"/>
+  <meta name="robots" content="index, follow"/>
+
+  <!-- Open Graph META -->
+  <meta property="og:title" content="Straż Pożarcie - Foodtruck Ząbki"/>
+  <meta property="og:description" content="Burgery, kanapki, frytki i sosy! Straż Pożarcie - foodtruck w Ząbkach pod Warszawą."/>
+  <meta property="og:image" content="https://strazpozarcie.pl/img/Straz_logo_WHITE.webp"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://strazpozarcie.pl"/>
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://strazpozarcie.pl">
+
   <!-- Favicon -->
-  <link href="img/favicon.ico?v=20251006" rel="icon" sizes="any"/>
-  <link href="img/favicon.webp?v=20251006" rel="icon" sizes="32x32" type="image/png"/>
-  <link href="img/favicon.png?v=20251006" rel="apple-touch-icon"/>
+  <link rel="icon" href="img/favicon.ico?v=20251006" sizes="any"/>
+  <link rel="icon" type="image/png" href="img/favicon.webp?v=20251006" sizes="32x32"/>
+  <link rel="apple-touch-icon" href="img/favicon.png?v=20251006"/>
+
   <!-- Tailwind / Ikony -->
-  <script src="https://cdn.tailwindcss.com">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/style.css?v=20251006"/>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FoodEstablishment",
+    "name": "Straż Pożarcie",
+    "image": "https://strazpozarcie.pl/img/Straz_logo_WHITE.webp",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Wolności 50",
+      "addressLocality": "Ząbki",
+      "postalCode": "05-091",
+      "addressCountry": "PL"
+    },
+    "telephone": "+48726766602",
+    "servesCuisine": "Polish, Street food, Burgers",
+    "url": "https://strazpozarcie.pl"
+  }
   </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
-  <link href="css/style.css?v=20251006" rel="stylesheet"/>
- </head>
- <body class="bg-gray-50 text-gray-900">
+</head>
+
+<body class="bg-gray-50 text-gray-900">
   <!-- ===== NAVBAR ===== -->
-  <header class="fixed top-0 left-0 w-full bg-red-700 text-white z-50 shadow-md transition-all duration-300" id="navbar">
-   <div class="container mx-auto flex items-center justify-between px-4 py-4 transition-all duration-300">
-    <a href="#home">
-     <img alt="Stra&zdot; Po&zdot;arcie logo" class="h-20 transition-all duration-300" id="navLogo" loading="lazy" src="img/Straz_logo_WHITE.webp"/>
-    </a>
-    <nav class="desktop-menu items-center space-x-6 text-lg font-semibold">
-     <a class="hover:text-yellow-300" href="#menu">
-      Menu
-     </a>
-     <a class="hover:text-yellow-300" href="#lokalizacja">
-      Lokalizacja
-     </a>
-     <a class="hover:text-yellow-300" href="#onas">
-      O nas
-     </a>
-     <a class="hover:text-yellow-300" href="#galeria">
-      Galeria
-     </a>
-     <a class="hover:text-yellow-300" href="#kontakt">
-      Kontakt
-     </a>
-     <a class="ml-3 inline-block bg-yellow-400 text-red-800 px-4 py-2 rounded-lg font-bold hover:bg-yellow-300 transition shadow-md hover:shadow-lg cta-btn" href="tel:726766602">
-      📞 Zadzwoń!
-     </a>
-     <a aria-label="Facebook Stra&zdot; Po&zdot;arcie" class="text-xl social-icon" href="https://www.facebook.com/Strazpozarcie" target="_blank">
-      <i class="fab fa-facebook-f">
-      </i>
-     </a>
-     <a aria-label="Instagram Stra&zdot; Po&zdot;arcie" class="text-xl social-icon" href="https://www.instagram.com/straz.pozarcie/" target="_blank">
-      <i class="fab fa-instagram">
-      </i>
-     </a>
-     <a aria-label="Google Maps Stra&zdot; Po&zdot;arcie" class="text-xl social-icon" href="https://share.google/KcjoB51ghjfyHQfKe" target="_blank">
-      <i class="fas fa-location-dot">
-      </i>
-     </a>
-    </nav>
-    <button class="mobile-toggle text-3xl leading-none" id="menuBtn">
-     ☰
-    </button>
-   </div>
+  <header id="navbar" class="fixed top-0 left-0 w-full bg-red-700 text-white z-50 shadow-md transition-all duration-300">
+    <div class="container mx-auto flex items-center justify-between px-4 py-4 transition-all duration-300">
+      <a href="#home">
+        <img id="navLogo" src="img/Straz_logo_WHITE.webp" alt="Straż Pożarcie logo" class="h-20 transition-all duration-300" loading="lazy"/>
+      </a>
+      <nav class="desktop-menu items-center space-x-6 text-lg font-semibold">
+        <a href="#menu" class="hover:text-yellow-300">Menu</a>
+        <a href="#lokalizacja" class="hover:text-yellow-300">Lokalizacja</a>
+        <a href="#onas" class="hover:text-yellow-300">O nas</a>
+        <a href="#galeria" class="hover:text-yellow-300">Galeria</a>
+        <a href="#kontakt" class="hover:text-yellow-300">Kontakt</a>
+        <a href="tel:726766602" class="ml-3 inline-block bg-yellow-400 text-red-800 px-4 py-2 rounded-lg font-bold hover:bg-yellow-300 transition shadow-md hover:shadow-lg cta-btn">📞 Zadzwoń!</a>
+        <a href="https://www.facebook.com/Strazpozarcie" target="_blank" aria-label="Facebook Straż Pożarcie" class="text-xl social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/straz.pozarcie/" target="_blank" aria-label="Instagram Straż Pożarcie" class="text-xl social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://share.google/KcjoB51ghjfyHQfKe" target="_blank" aria-label="Google Maps Straż Pożarcie" class="text-xl social-icon"><i class="fas fa-location-dot"></i></a>
+      </nav>
+      <button id="menuBtn" class="mobile-toggle text-3xl leading-none">☰</button>
+    </div>
   </header>
+
   <!-- ===== MENU MOBILNE ===== -->
-  <div class="mobile-panel pt-3 pb-4" id="mobileMenu">
-   <ul class="flex flex-col items-center gap-4 text-white text-lg font-semibold">
-    <li>
-     <a href="#menu">
-      Menu
-     </a>
-    </li>
-    <li>
-     <a href="#onas">
-      O nas
-     </a>
-    </li>
-    <li>
-     <a href="#lokalizacja">
-      Lokalizacja
-     </a>
-    </li>        
-    <li>
-     <a href="#galeria">
-      Galeria
-     </a>
-    </li>
-    <li>
-     <a href="#kontakt">
-      Kontakt
-     </a>
-    </li>
-   </ul>
+  <div id="mobileMenu" class="mobile-panel pt-3 pb-4">
+    <ul class="flex flex-col items-center gap-4 text-white text-lg font-semibold">
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#onas">O nas</a></li>
+      <li><a href="#lokalizacja">Lokalizacja</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
   </div>
+
   <!-- ===== HERO ===== -->
-  <section class="relative h-screen flex flex-col items-center justify-center text-center text-white bg-red-700 mt-[72px] overflow-hidden" id="home">
-   <img alt="Burger Melduje Ser Stra&zdot; Po&zdot;arcie" class="slide-img active" loading="lazy" src="img/hero1.webp"/>
-   <img alt="Frytki Stra&zdot; Po&zdot;arcie" class="slide-img" loading="lazy" src="img/hero2.webp"/>
-   <img alt="Samoch&oacute;d Stra&zdot; Po&zdot;arcie na evencie" class="slide-img" loading="lazy" src="img/hero3.webp"/>
-   <img alt="Burger Po&zdot;ar Stra&zdot; Po&zdot;arcie" class="slide-img" loading="lazy" src="img/hero4.webp"/>
-   <div class="red-overlay">
-   </div>
-   <div class="relative z-10 px-6 flex flex-col items-center">
-    <img alt="Stra&zdot; Po&zdot;arcie" class="logo-big mx-auto mb-3" loading="lazy" src="img/Straz_logo_WHITE.webp">
-     <a class="text-yellow-300 font-bold text-3xl md:text-4xl hover:text-white transition mb-4 drop-shadow-lg" href="tel:726766602">
-      📞 726-766-602
-     </a>
-     <p class="text-2xl md:text-3xl font-bold drop-shadow">
-      🔥 Zam&oacute;w i odbierz!🔥
-     </p>
-     <p class="text-lg md:text-xl text-yellow-200 mt-2 drop-shadow">
-  🕒 <strong>Godziny otwarcia:</strong> Pon–Sob 12:00–20:00 | Niedz. nieczynne
-</p>
-    </img>
-   </div>
+  <section id="home" class="relative h-screen flex flex-col items-center justify-center text-center text-white bg-red-700 mt-[72px] overflow-hidden">
+    <img src="img/hero1.webp" alt="Burger Melduję Ser Straż Pożarcie" class="slide-img active" loading="lazy"/>
+    <img src="img/hero2.webp" alt="Frytki Straż Pożarcie" class="slide-img" loading="lazy"/>
+    <img src="img/hero3.webp" alt="Samochód Straż Pożarcie na evencie" class="slide-img" loading="lazy"/>
+    <img src="img/hero4.webp" alt="Burger Pożar Straż Pożarcie" class="slide-img" loading="lazy"/>
+    <div class="red-overlay"></div>
+    <div class="relative z-10 px-6 flex flex-col items-center">
+      <img src="img/Straz_logo_WHITE.webp" alt="Straż Pożarcie" class="logo-big mx-auto mb-3" loading="lazy">
+      <a href="tel:726766602" class="text-yellow-300 font-bold text-3xl md:text-4xl hover:text-white transition mb-4 drop-shadow-lg">📞 726-766-602</a>
+      <p class="text-2xl md:text-3xl font-bold drop-shadow">🔥 Zamów i odbierz! 🔥</p>
+      <p class="text-lg md:text-xl text-yellow-200 mt-2 drop-shadow">🕒 <strong>Godziny otwarcia:</strong> Pon–Sob 12:00–20:00 | Niedz. nieczynne</p>
+    </div>
   </section>
+
   <!-- ===== MENU ===== -->
-  <section class="bg-white py-16 px-6 md:px-16 fade-in" id="menu">
-   <div class="max-w-6xl mx-auto text-center">
-    <h2 class="text-4xl font-extrabold text-red-600 mb-8">
-     Menu
-    </h2>
-    <!-- Burgery -->
-    <div class="mb-10">
-     <h3 class="text-3xl font-bold text-gray-800 mb-2">
-      Burgery
-     </h3>
-     <p class="text-gray-600 mb-6">
-      Ka&zdot;dy burger to 180 g polskiej wo&lstrok;owiny (lub kotlet vege), podawany w ma&sacute;lanej bu&lstrok;ce briosh.
-     </p>
-     <div class="grid md:grid-cols-2 gap-8 text-left">
-      <div class="menu-card flex gap-4">
-       <img alt="Burger Bazowy Stra&zdot; Po&zdot;arcie" class="menu-img" loading="lazy" src="img/bazowy.webp"/>
-       <div>
-        <h4>
-         Bazowy &ndash; 32 z&lstrok;
-        </h4>
-        <p>
-         Karmelizowana cebula, sa&lstrok;ata lodowa, pomidor, og&oacute;rek, ketchup, majonez.
-        </p>
-       </div>
+  <section id="menu" class="bg-white py-16 px-6 md:px-16 fade-in">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl font-extrabold text-red-600 mb-8">Menu</h2>
+
+      <div class="mb-10">
+        <h3 class="text-3xl font-bold text-gray-800 mb-2">Burgery</h3>
+        <p class="text-gray-600 mb-6">Każdy burger to 180 g polskiej wołowiny (lub kotlet vege), podawany w maślanej bułce briosh.</p>
+        <div class="grid md:grid-cols-2 gap-8 text-left">
+          <div class="menu-card flex gap-4">
+            <img src="img/bazowy.webp" alt="Burger Bazowy Straż Pożarcie" class="menu-img" loading="lazy"/>
+            <div><h4>Bazowy – 32 zł</h4><p>Karmelizowana cebula, sałata lodowa, pomidor, ogórek, ketchup, majonez.</p></div>
+          </div>
+          <div class="menu-card flex gap-4">
+            <img src="img/melduje_ser.webp" alt="Burger Melduję Ser Straż Pożarcie" class="menu-img" loading="lazy"/>
+            <div><h4>Melduję Ser! – 36 zł</h4><p>Cheddar, mimolette, ogórek, sałata, pomidor, cebula, ketchup, majonez.</p></div>
+          </div>
+          <div class="menu-card flex gap-4">
+            <img src="img/pozar.webp" alt="Burger Pożar Straż Pożarcie" class="menu-img" loading="lazy"/>
+            <div><h4>Pożar – 37 zł</h4><p>Jalapeños, bekon, cheddar, cebula w chili, rukola, sos strażacki.</p></div>
+          </div>
+          <div class="menu-card flex gap-4">
+            <img src="img/baca_na_sygnale.webp" alt="Burger Baca na Sygnale Straż Pożarcie" class="menu-img" loading="lazy"/>
+            <div><h4>Baca na Sygnale – 38 zł</h4><p>Ser wędzony, żurawina, cebula, rukola, pomidor, sos majonezowy.</p></div>
+          </div>
+        </div>
       </div>
-      <div class="menu-card flex gap-4">
-       <img alt="Burger Melduje Ser Stra&zdot; Po&zdot;arcie" class="menu-img" loading="lazy" src="img/melduje_ser.webp"/>
-       <div>
-        <h4>
-         Melduje Ser! &ndash; 36 z&lstrok;
-        </h4>
-        <p>
-         Cheddar, mimolette, og&oacute;rek, sa&lstrok;ata, pomidor, cebula, ketchup, majonez.
-        </p>
-       </div>
+
+      <div class="mb-10">
+        <h3 class="text-3xl font-bold text-gray-800 mb-2">Kanapki specjalne</h3>
+        <p class="text-gray-600 mb-6">Nasze autorskie kanapki inspirowane kuchnią polską – grillowane i podawane w bułce briosh.</p>
+        <div class="grid md:grid-cols-2 gap-8 text-left">
+          <div class="menu-card flex gap-4">
+            <img src="img/kielbas.webp" alt="Kanapka Kiełbas Straż Pożarcie" class="menu-img" loading="lazy"/>
+            <div><h4>Kiełbas – 30 zł</h4><p>2× biała kiełbasa, cebula, kapusta marynowana, sos chrzanowy, sałata.</p></div>
+          </div>
+          <div class="menu-card flex gap-4">
+            <img src="img/trupeer.webp" alt="Kanapka Trupeer Straż Pożarcie" class="menu-img" loading="lazy"/>
+            <div><h4>Trupeer – 28 zł</h4><p>Marynowana wątróbka, rukola, cebula, ketchup, majonez.</p></div>
+          </div>
+          <div class="menu-card flex gap-4">
+            <img src="img/prl_ek.webp" alt="Kanapka PRL-ek Straż Pożarcie" class="menu-img" loading="lazy"/>
+            <div><h4>PRL-ek – 22 zł</h4><p>2 kotlety drobiowo-wieprzowe, sałata, pomidor, cebula, remulada.</p></div>
+          </div>
+          <div class="menu-card flex flex-col items-center justify-center gap-2 relative overflow-hidden new-item">
+            <img src="img/placeholder_burger.webp" alt="Wkrótce nowość Straż Pożarcie" class="w-28 h-28 rounded-full object-cover blur-sm opacity-60" loading="lazy"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-red-800/70 to-transparent flex flex-col items-center justify-center text-center p-4">
+              <p class="text-yellow-300 text-lg font-bold tracking-wide animate-pulse">🔥 POWRÓT KLASYKA 🔥</p>
+              <span class="text-white text-sm italic">Straż szykuje coś specjalnego...</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="menu-card flex gap-4">
-       <img alt="Burger Po&zdot;ar Stra&zdot; Po&zdot;arcie" class="menu-img" loading="lazy" src="img/pozar.webp"/>
-       <div>
-        <h4>
-         Po&zdot;ar &ndash; 37 z&lstrok;
-        </h4>
-        <p>
-         Jalapenos, bekon, cheddar, cebula w chili, rukola, sos stra&zdot;acki.
-        </p>
-       </div>
+
+      <div>
+        <h3 class="text-3xl font-bold text-gray-800 mb-6">Dodatki</h3>
+        <div class="grid md:grid-cols-2 gap-8 text-left">
+          <div class="menu-card flex gap-4"><img src="img/frytki.webp" alt="Frytki Straż Pożarcie" class="menu-img" loading="lazy"/><div><h4>Frytki – 10/15 zł</h4><p>Frytki z całego ziemniaka (małe/duże), sos, opakowanie.</p></div></div>
+          <div class="menu-card flex gap-4"><img src="img/frytki_serowe.webp" alt="Frytki serowe Straż Pożarcie" class="menu-img" loading="lazy"/><div><h4>Frytki serowe – 20 zł</h4><p>Frytki, sos serowy, pietruszka, prażona cebulka.</p></div></div>
+          <div class="menu-card flex gap-4"><img src="img/frytki_z_batata.webp" alt="Frytki z batata Straż Pożarcie" class="menu-img" loading="lazy"/><div><h4>Frytki z batata – 15/20 zł</h4><p>Frytki z batata, sos, opakowanie.</p></div></div>
+          <div class="menu-card flex gap-4"><img src="img/napoje.webp" alt="Napoje Straż Pożarcie" class="menu-img" loading="lazy"/><div><h4>Napoje – 6 zł</h4><p>Cola 0,3 / Sprite 0,3 / Lemoniada / Sok pomarańczowy 250 ml.</p></div></div>
+        </div>
       </div>
-      <div class="menu-card flex gap-4">
-       <img alt="Burger Baca na Sygnale Stra&zdot; Po&zdot;arcie" class="menu-img" loading="lazy" src="img/baca_na_sygnale.webp"/>
-       <div>
-        <h4>
-         Baca na Sygnale &ndash; 38 z&lstrok;
-        </h4>
-        <p>
-         Ser w&eogon;dzony, &zdot;urawina, cebula, rukola, pomidor, sos majonezowy.
-        </p>
-       </div>
-      </div>
-     </div>
     </div>
-    <!-- Kanapki specjalne -->
-    <div class="mb-10">
-     <h3 class="text-3xl font-bold text-gray-800 mb-2">
-      Kanapki specjalne
-     </h3>
-     <p class="text-gray-600 mb-6">
-      Nasze autorskie kanapki inspirowane kuchni&aogon; polsk&aogon; &ndash; grillowane i podawane w bu&lstrok;ce briosh.
-     </p>
-     <div class="grid md:grid-cols-2 gap-8 text-left">
-      <div class="menu-card flex gap-4">
-       <img alt="Kanapka Kie&lstrok;bas Stra&zdot; Po&zdot;arcie" class="menu-img" loading="lazy" src="img/kielbas.webp"/>
-       <div>
-        <h4>
-         Kie&lstrok;bas &ndash; 30 z&lstrok;
-        </h4>
-        <p>
-         2&times; bia&lstrok;a kie&lstrok;basa, cebula, kapusta marynowana, sos chrzanowy, sa&lstrok;ata.
-        </p>
-       </div>
-      </div>
-      <div class="menu-card flex gap-4">
-       <img alt="Kanapka Trupeer Stra&zdot; Po&zdot;arcie" class="menu-img" loading="lazy" src="img/trupeer.webp"/>
-       <div>
-        <h4>
-         Trupeer &ndash; 30 z&lstrok;
-        </h4>
-        <p>
-         Marynowana w&aogon;tr&oacute;bka, rukola, cebula, ketchup, majonez.
-        </p>
-       </div>
-      </div>
-      <div class="menu-card flex gap-4">
-       <img alt="Kanapka PRL-ek Stra&zdot; Po&zdot;arcie" class="menu-img" loading="lazy" src="img/prl_ek.webp"/>
-       <div>
-        <h4>
-         PRL-ek &ndash; 22 z&lstrok;
-        </h4>
-        <p>
-         2 kotlety drobiowo-wieprzowe, sa&lstrok;ata, pomidor, cebula, remulada.
-        </p>
-       </div>
-      </div>
-      <!-- Kafelek teaserowy -->
-      <div class="menu-card flex flex-col items-center justify-center gap-2 relative overflow-hidden new-item">
-       <img alt="Wkr&oacute;tce nowo&sacute;&cacute; Stra&zdot; Po&zdot;arcie" class="w-28 h-28 rounded-full object-cover blur-sm opacity-60" loading="lazy" src="img/placeholder_burger.webp"/>
-       <div class="absolute inset-0 bg-gradient-to-t from-red-800/70 to-transparent flex flex-col items-center justify-center text-center p-4">
-        <p class="text-yellow-300 text-lg font-bold tracking-wide animate-pulse">
-         🔥 POWR&Oacute;T KLASYKA 🔥
-        </p>
-        <span class="text-white text-sm italic">
-         Stra&zdot; szykuje co&sacute; specjalnego...
-        </span>
-       </div>
-      </div>
-     </div>
-    </div>
-    <!-- Dodatki -->
-    <div>
-     <h3 class="text-3xl font-bold text-gray-800 mb-6">
-      Dodatki
-     </h3>
-     <div class="grid md:grid-cols-2 gap-8 text-left">
-      <div class="menu-card flex gap-4">
-       <img alt="Frytki Stra&zdot; Po&zdot;arcie" class="menu-img" loading="lazy" src="img/frytki.webp"/>
-       <div>
-        <h4>
-         Frytki &ndash; 10/15 z&lstrok;
-        </h4>
-        <p>
-         Frytki z ca&lstrok;ego ziemniaka (ma&lstrok;e/du&zdot;e), sos, opakowanie.
-        </p>
-       </div>
-      </div>
-      <div class="menu-card flex gap-4">
-       <img alt="Frytki serowe Stra&zdot; Po&zdot;arcie" class="menu-img" loading="lazy" src="img/frytki_serowe.webp"/>
-       <div>
-        <h4>
-         Frytki serowe &ndash; 20 z&lstrok;
-        </h4>
-        <p>
-         Frytki, sos serowy, pietruszka, pra&zdot;ona cebulka.
-        </p>
-       </div>
-      </div>
-      <div class="menu-card flex gap-4">
-       <img alt="Frytki z batata Stra&zdot; Po&zdot;arcie" class="menu-img" loading="lazy" src="img/frytki_z_batata.webp"/>
-       <div>
-        <h4>
-         Frytki z batata &ndash; 15/20 z&lstrok;
-        </h4>
-        <p>
-         Frytki z batata, sos, opakowanie.
-        </p>
-       </div>
-      </div>
-      <div class="menu-card flex gap-4">
-       <img alt="Napoje Stra&zdot; Po&zdot;arcie" class="menu-img" loading="lazy" src="img/napoje.webp"/>
-       <div>
-        <h4>
-         Napoje &ndash; 6 z&lstrok;
-        </h4>
-        <p>
-         Cola 0,3 / Sprite 0,3 / Lemoniada / Sok pomara&nacute;czowy 250 ml.
-        </p>
-       </div>
-      </div>
-     </div>
-    </div>
-   </div>
   </section>
+
   <!-- ===== LOKALIZACJA ===== -->
-  <section class="py-16 px-6 container mx-auto text-center fade-in" id="lokalizacja">
-   <h2 class="text-4xl font-extrabold text-red-600 mb-8">
-    Lokalizacja
-   </h2>
-   <p class="text-lg mb-6">
-    Znajdziesz nas tutaj:
-    <b>
-     Wolno&sacute;ci 50, 05-091 Z&aogon;bki (Pod Hal&aogon; Makro)
-    </b>
-   </p>
-   <iframe allowfullscreen="" height="450" loading="lazy" src="https://www.google.com/maps?q=Wolno&sacute;ci+50,+Z&aogon;bki&amp;output=embed" style="border:0;" title="Mapa lokalizacji Stra&zdot; Po&zdot;arcie w Z&aogon;bkach" width="100%">
-   </iframe>
+  <section id="lokalizacja" class="py-16 px-6 container mx-auto text-center fade-in">
+    <h2 class="text-4xl font-extrabold text-red-600 mb-8">Lokalizacja</h2>
+    <p class="text-lg mb-6">Znajdziesz nas tutaj: <b>Wolności 50, 05-091 Ząbki (pod halą Makro)</b></p>
+    <iframe width="100%" height="450" style="border:0;" loading="lazy" allowfullscreen src="https://www.google.com/maps?q=Wolności+50,+Ząbki&output=embed" title="Mapa lokalizacji Straż Pożarcie w Ząbkach"></iframe>
   </section>
- <!-- ===== O NAS ===== -->
-<section id="onas" class="py-14 px-6 container mx-auto fade-in max-w-6xl">
-  <h2 class="text-4xl font-extrabold text-red-600 mb-10 text-center">
-    O nas
-  </h2>
 
-  <div class="flex flex-col md:flex-row items-center gap-8 mb-10">
-    <div class="md:w-1/2 text-lg leading-relaxed">
-      🚒 <strong>Straż Pożarcie – alarm smaku!</strong><br>
-      Nasz foodtruck to klasyczny Mercedes z 1970 roku (już 55 lat!) przerobiony na mobilną kuchnię.  
-      Ogień to nasz żywioł, a jedzenie – nasza pasja – staramy się połączyć klasykę polskiej kuchni z prostym, ulicznym jedzeniem!
+  <!-- ===== O NAS ===== -->
+  <section id="onas" class="py-14 px-6 container mx-auto fade-in max-w-6xl">
+    <h2 class="text-4xl font-extrabold text-red-600 mb-10 text-center">O nas</h2>
+    <div class="flex flex-col md:flex-row items-center gap-8 mb-10">
+      <div class="md:w-1/2 text-lg leading-relaxed">
+        🚒 <strong>Straż Pożarcie – alarm smaku!</strong><br>
+        Nasz foodtruck to klasyczny Mercedes z 1970 roku (już 55 lat!) przerobiony na mobilną kuchnię.  
+        Ogień to nasz żywioł, a jedzenie – nasza pasja – staramy się połączyć klasykę polskiej kuchni z prostym, ulicznym jedzeniem!
+      </div>
+      <img src="img/o_nas1.webp" alt="Foodtruck Straż Pożarcie" class="md:w-1/2 rounded-xl shadow-md" loading="lazy">
     </div>
-    <img src="img/o_nas1.webp" alt="Foodtruck Straż Pożarcie" class="md:w-1/2 rounded-xl shadow-md" loading="lazy">
-  </div>
-
-  <div class="flex flex-col md:flex-row-reverse items-center gap-8 mb-10">
-    <div class="md:w-1/2 text-lg leading-relaxed">
-      Projekt powstał w 2018 roku.  
-      Od tamtej pory gasimy głód na festiwalach, koncertach i planach filmowych.  
-      Od października 2025 roku stacjonujemy w <strong>Ząbkach pod Warszawą</strong>.
+    <div class="flex flex-col md:flex-row-reverse items-center gap-8 mb-10">
+      <div class="md:w-1/2 text-lg leading-relaxed">
+        Projekt powstał w 2018 roku.  
+        Od tamtej pory gasimy głód na festiwalach, koncertach i planach filmowych.  
+        Od października 2025 roku stacjonujemy w <strong>Ząbkach pod Warszawą</strong>.
+      </div>
+      <img src="img/o_nas2.webp" alt="Załoga Straż Pożarcie" class="md:w-1/2 rounded-xl shadow-md" loading="lazy">
     </div>
-    <img src="img/o_nas2.webp" alt="Załoga Straż Pożarcie" class="md:w-1/2 rounded-xl shadow-md" loading="lazy">
-  </div>
-
-  <div class="flex flex-col md:flex-row items-center gap-8">
-    <div class="md:w-1/2 text-lg leading-relaxed">
-      W naszym menu znajdziesz klasyczne burgery, autorskie kanapki i dodatki, które 
-      ugaszą każdy ogień w brzuchu. 🚨🍔🍟
+    <div class="flex flex-col md:flex-row items-center gap-8">
+      <div class="md:w-1/2 text-lg leading-relaxed">
+        W naszym menu znajdziesz klasyczne burgery, autorskie kanapki i dodatki, które ugaszą każdy ogień w brzuchu. 🚨🍔🍟
+      </div>
+      <img src="img/o_nas3.webp" alt="Burger Straż Pożarcie" class="md:w-1/2 rounded-xl shadow-md" loading="lazy">
     </div>
-    <img src="img/o_nas3.webp" alt="Burger Straż Pożarcie" class="md:w-1/2 rounded-xl shadow-md" loading="lazy">
-  </div>
-</section>
- <!-- ===== GALERIA ===== -->
-<section id="galeria" class="bg-gray-50 py-16 px-6 md:px-16 fade-in">
-  <div class="max-w-6xl mx-auto text-center">
-    <h2 class="text-4xl font-extrabold text-red-600 mb-8" title="Galeria Straż Pożarcie na Instagramie">
-      Galeria
-    </h2>
+  </section>
 
-    <p class="text-lg text-gray-700 mb-8 animate-pulse">
-      📸 Zaobserwuj nas na
-      <a href="https://www.instagram.com/straz.pozarcie/" 
-         target="_blank" 
-         rel="noopener noreferrer"
-         class="text-red-600 font-semibold hover:text-yellow-400 transition">
-        Instagramie
-      </a>
-      i
-      <a href="https://www.facebook.com/Strazpozarcie" 
-         target="_blank" 
-         rel="noopener noreferrer"
-         class="text-red-600 font-semibold hover:text-yellow-400 transition">
-        Facebooku
-      </a>
-      !
-    </p>
+  <!-- ===== GALERIA ===== -->
+  <section id="galeria" class="bg-gray-50 py-16 px-6 md:px-16 fade-in">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl font-extrabold text-red-600 mb-8" title="Galeria Straż Pożarcie na Instagramie">Galeria</h2>
+      <p class="text-lg text-gray-700 mb-8 animate-pulse">
+        📸 Zaobserwuj nas na
+        <a href="https://www.instagram.com/straz.pozarcie/" target="_blank" rel="noopener noreferrer" class="text-red-600 font-semibold hover:text-yellow-400 transition">Instagramie</a>
+        i
+        <a href="https://www.facebook.com/Strazpozarcie" target="_blank" rel="noopener noreferrer" class="text-red-600 font-semibold hover:text-yellow-400 transition">Facebooku</a>
+        !
+      </p>
+      <iframe src="https://www.juicer.io/api/feeds/straz-pozarcie/iframe" title="Instagram Straż Pożarcie" loading="lazy" allowtransparency="true" frameborder="0" scrolling="no" style="width:100%;max-width:1000px;height:400px;border:0;display:block;margin:0 auto;border-radius:12px;"></iframe>
+    </div>
+  </section>
 
-    <!-- Galeria Juicer.io -->
-    <iframe 
-      src="https://www.juicer.io/api/feeds/straz-pozarcie/iframe"
-      title="Instagram Straż Pożarcie"
-      loading="lazy"
-      allowtransparency="true"
-      frameborder="0"
-      scrolling="no"
-      style="width:100%;max-width:1000px;height:400px;border:0;display:block;margin:0 auto;border-radius:12px;">
-    </iframe>
-  </div>
-</section>
   <!-- ===== KONTAKT ===== -->
-<section id="kontakt" class="bg-gray-100 py-16 px-6 text-center fade-in">
-  <h2 class="text-4xl font-extrabold text-red-600 mb-8">Kontakt</h2>
+ <section id="kontakt" class="bg-gray-100 py-24 px-6 text-center fade-in scroll-mt-32">
+    <h2 class="text-4xl font-extrabold text-red-600 mb-8">Kontakt</h2>
+    <p class="text-lg mb-4 font-semibold">📞 <a href="tel:726766602" class="text-red-600 hover:underline">726-766-602</a></p>
+    <p class="text-xl mb-3 font-medium">Zamów i odbierz!</p>
+    <p class="text-lg text-gray-700 mb-6">
+      🕒 <strong>Godziny otwarcia:</strong><br> Poniedziałek – Sobota: <b>12:00–20:00</b><br> Niedziela: <b>nieczynne</b>
+    </p>
+    <p class="text-lg text-gray-700 mb-6">Masz pytania o podnajem na imprezy, wydarzenia prywatne lub zamówienia grupowe?</p>
+    <a href="mailto:strazpozarcie@gmail.com?subject=Zapytanie%20ze%20strony%20Straż%20Pożarcie" class="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-4 rounded-lg transition">✉️ Napisz do nas</a>
+  </section>
 
-  <p class="text-lg mb-4 font-semibold">
-    📞 <a href="tel:726766602" class="text-red-600 hover:underline">726-766-602</a>
-  </p>
+  <!-- ===== STOPKA ===== -->
+ <footer class="bg-red-700 text-white py-12 text-center">
+    <p class="text-sm mb-2">© 2025 Straż Pożarcie | Wszystkie prawa zastrzeżone</p>
+    <p class="text-sm mb-3">🕒 <strong>Pon–Sob 12:00–20:00</strong> | Niedz. nieczynne</p>
+    <div class="space-x-4">
+      <a href="#!" onclick="openPopup('privacyPopup')" class="hover:text-yellow-300 transition">Polityka prywatności</a> |
+      <a href="#!" onclick="openPopup('dataPopup')" class="hover:text-yellow-300 transition">Dane firmy</a> |
+      <a href="#!" onclick="openPopup('contactPopup')" class="hover:text-yellow-300 transition">Kontakt</a>
+    </div>
+  </footer>
 
-  <p class="text-xl mb-3 font-medium">Zamów i odbierz!</p>
-
-  <!-- GODZINY OTWARCIA -->
-  <p class="text-lg text-gray-700 mb-6">
-    🕒 <strong>Godziny otwarcia:</strong><br>
-    Poniedziałek – Sobota: <b>12:00–20:00</b><br>
-    Niedziela: <b>nieczynne</b>
-  </p>
-
-  <p class="text-lg text-gray-700 mb-6">
-    Masz pytania o podnajem na imprezy, wydarzenia prywatne lub zamówienia grupowe?
-  </p>
-
-  <a href="mailto:strazpozarcie@gmail.com?subject=Zapytanie%20ze%20strony%20Straż%20Pożarcie"
-     class="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-4 rounded-lg transition">
-     ✉️ Napisz do nas
-  </a>
-</section>
-<!-- ===== STOPKA ===== -->
-<footer class="bg-red-700 text-white py-6 text-center">
-  <p class="text-sm mb-2">
-    © 2025 Straż Pożarcie | Wszystkie prawa zastrzeżone
-  </p>
-  <p class="text-sm mb-3">
-    🕒 <strong>Pon–Sob 12:00–20:00</strong> | Niedz. nieczynne
-  </p>
-  <div class="space-x-4">
-    <a href="#!" onclick="openPopup('privacyPopup')" class="hover:text-yellow-300 transition">Polityka prywatności</a> |
-    <a href="#!" onclick="openPopup('dataPopup')" class="hover:text-yellow-300 transition">Dane firmy</a> |
-    <a href="#!" onclick="openPopup('contactPopup')" class="hover:text-yellow-300 transition">Kontakt</a>
-  </div>
-</footer>
   <!-- POPUPY -->
-  <div class="popup" id="privacyPopup">
-   <div class="popup-content">
-    <button class="close" onclick="closePopup('privacyPopup')">
-     &times;
-    </button>
-    <h3 class="text-2xl font-bold mb-4 text-red-700">
-     Polityka prywatno&sacute;ci
-    </h3>
-    <p class="text-gray-700 text-left leading-relaxed">
-     Serwis nie gromadzi danych osobowych, nie wykorzystuje plik&oacute;w cookies ani narz&eogon;dzi analitycznych.
-        W przypadku kontaktu przez e-mail, dane s&lstrok;u&zdot;&aogon; wy&lstrok;&aogon;cznie do obs&lstrok;ugi zapytania i nie s&aogon; przekazywane podmiotom trzecim.
-    </p>
-   </div>
+  <div id="privacyPopup" class="popup">
+    <div class="popup-content">
+      <button class="close" onclick="closePopup('privacyPopup')">×</button>
+      <h3 class="text-2xl font-bold mb-4 text-red-700">Polityka prywatności</h3>
+      <p class="text-gray-700 text-left leading-relaxed">
+        Serwis nie gromadzi danych osobowych, nie wykorzystuje plików cookies ani narzędzi analitycznych.
+        W przypadku kontaktu przez e-mail dane służą wyłącznie do obsługi zapytania i nie są przekazywane podmiotom trzecim.
+      </p>
+    </div>
   </div>
-  <div class="popup" id="dataPopup">
-   <div class="popup-content">
-    <button class="close" onclick="closePopup('dataPopup')">
-     &times;
-    </button>
-    <h3 class="text-2xl font-bold mb-4 text-red-700">
-     Dane firmy
-    </h3>
-    <p class="text-gray-700 text-left leading-relaxed">
-     SIMPLEXIT24 SP&Oacute;&Lstrok;KA Z OGRANICZON&Aogon; ODPOWIEDZIALNO&Sacute;CI&Aogon;
-     <br/>
-     ul. CYPRYSOWA 4, 05-077 WARSZAWA
-     <br/>
-     NIP: 9522151323
-     <br/>
-     e-mail: strazpozarcie@gmail.com
-    </p>
-   </div>
+
+  <div id="dataPopup" class="popup">
+    <div class="popup-content">
+      <button class="close" onclick="closePopup('dataPopup')">×</button>
+      <h3 class="text-2xl font-bold mb-4 text-red-700">Dane firmy</h3>
+      <p class="text-gray-700 text-left leading-relaxed">
+        SIMPLEXIT24 SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ<br/>
+        ul. CYPRYSOWA 4, 05-077 WARSZAWA<br/>
+        NIP: 9522151323<br/>
+        e-mail: strazpozarcie@gmail.com
+      </p>
+    </div>
   </div>
-  <div class="popup" id="contactPopup">
-   <div class="popup-content">
-    <button class="close" onclick="closePopup('contactPopup')">
-     &times;
-    </button>
-    <h3 class="text-2xl font-bold mb-4 text-red-700">
-     Kontakt
-    </h3>
-    <p class="text-gray-700 text-left leading-relaxed">
-     🚒 Foodtruck Stra&zdot; Po&zdot;arcie
-     <br/>
-     📍 ul. Wolno&sacute;ci 50, 05-091 Z&aogon;bki
-     <br/>
-     &phone;️
-     <a class="text-red-600 hover:underline" href="tel:726766602">
-      726-766-602
-     </a>
-     <br/>
-     ✉️
-     <a class="text-red-600 hover:underline" href="mailto:strazpozarcie@gmail.com">
-      strazpozarcie@gmail.com
-     </a>
-    </p>
-   </div>
+
+  <div id="contactPopup" class="popup">
+    <div class="popup-content">
+      <button class="close" onclick="closePopup('contactPopup')">×</button>
+      <h3 class="text-2xl font-bold mb-4 text-red-700">Kontakt</h3>
+      <p class="text-gray-700 text-left leading-relaxed">
+        🚒 Foodtruck Straż Pożarcie<br/>
+        📍 ul. Wolności 50, 05-091 Ząbki<br/>
+        ☎️ <a href="tel:726766602" class="text-red-600 hover:underline">726-766-602</a><br/>
+        ✉️ <a href="mailto:strazpozarcie@gmail.com" class="text-red-600 hover:underline">strazpozarcie@gmail.com</a>
+      </p>
+    </div>
   </div>
-  <!-- ===== FLOATING CALL BUTTON (MOBILE) ===== -->
-  <a aria-label="Zadzwo&nacute; do Stra&zdot; Po&zdot;arcie" class="call-btn-mobile" href="tel:726766602">
-   <i class="fas fa-phone">
-   </i>
-  </a>
-  <!-- JS -->
-  <script src="js/main.js">
-  </script>
- </body>
+
+  <!-- ===== FLOATING CALL BUTTON ===== -->
+  <a href="tel:726766602" aria-label="Zadzwoń do Straż Pożarcie" class="call-btn-mobile"><i class="fas fa-phone"></i></a>
+
+  <script src="js/main.js"></script>
+</body>
 </html>

@@ -374,3 +374,22 @@ section {
     display: none;
   }
 }
+/* Menu mobilne poniżej 1025 px */
+@media (max-width: 1024px) {
+  nav.desktop-menu {
+    display: none;
+  }
+  button.mobile-toggle {
+    display: block;
+  }
+}
+
+/* Menu desktopowe powyżej 1024.5 px */
+@media (min-width: 1024.5px) {
+  nav.desktop-menu {
+    display: flex;
+  }
+  button.mobile-toggle {
+    display: none;
+  }
+}
