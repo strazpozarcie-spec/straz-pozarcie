@@ -53,8 +53,12 @@ Header set Content-Security-Policy "default-src 'self' https: data: blob:; img-s
 # 🌐 KODOWANIE I DOMYŚLNA STRONA
 # ==============================
 
-AddDefaultCharset utf-8
-DirectoryIndex index.html index.htm
+AddDefaultCharset UTF-8
+
+<IfModule mod_mime.c>
+  AddType text/css .css
+  AddType application/javascript .js
+  AddType image/webp .webp
 
 # ==============================
 # 🧹 BLOKOWANIE NIECHCIANYCH ŻĄDAŃ
